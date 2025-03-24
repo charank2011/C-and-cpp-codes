@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,r,c,a[100][100],sum=0;
+    printf("Enter the no.of rows");
+    scanf("%d",&r);
+    printf("enter the no.of columns");
+    scanf("%d",&c);
+    printf("Enter the elements which are to be in matrix \n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d ",&a[i][j]);
+        }
+    }
+    printf("prtinting the matrix \n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("%d",a[i][j]);
+            
+        }
+        printf("\n");
+    }
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            sum=sum+a[i][j];
+            
+        }
+    }
+    printf("the sum of all the elements is %d",sum);
+    
+}
